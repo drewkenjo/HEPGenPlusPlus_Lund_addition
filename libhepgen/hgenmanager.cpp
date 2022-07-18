@@ -348,6 +348,12 @@ void HGenManager::closeOutPut()
 
 
 
+void HGenManager::enableLundOutput()
+{
+    outputMan->enableLUND();
+}
+
+
 void HGenManager::enableLeptoOutput(bool _gfortran)
 {
 

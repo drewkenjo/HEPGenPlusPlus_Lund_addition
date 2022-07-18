@@ -90,6 +90,8 @@ public:
     void enableOutPut(string _filename);
     /*! \brief Enabled Output in LEPTO-Format either with or without gfortran-compat-headers */
     void enableLeptoOutput(bool _gfortran);
+    /*! \brief Enabled Output in CLAS12 LUND-Format */
+    void enableLundOutput();
 
     /*! \brief returns the event-pointer for a generated event */
     HEvent* getEvent() {

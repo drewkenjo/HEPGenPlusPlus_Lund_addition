@@ -18,6 +18,7 @@
 #include "houtputbackendROOT.h"
 #endif
 
+#include "houtputbackendLUND.h"
 #include "houtputbackendLEPTO.h"
 #include "houtputbackendLEPTOGF.h"
 
@@ -34,6 +35,8 @@ public:
     ~HOutPut();
     /*! \brief enables ascii backend */
     void enableASCII();
+    /*! \brief enables LUND backend */
+    void enableLUND();
     /*! \brief enables LEPTO backend */
     void enableLEPTO(bool _gfortran);
     /*! \brief enables ROOT backend (NOT WORKING!!!) */
@@ -57,7 +60,7 @@ private:
     std::string fileName;
     HParamManager* paramMan;
 
-    bool enabledROOT, enabledASCII, enabledLEPTO;
+    bool enabledROOT, enabledASCII, enabledLEPTO, enabledLUND;
 
 
 

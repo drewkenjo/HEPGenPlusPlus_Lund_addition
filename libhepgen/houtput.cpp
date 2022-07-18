@@ -6,6 +6,15 @@ void HOutPut::enableASCII()
 
 }
 
+
+void HOutPut::enableLUND()
+{
+    HOutPutBackEnd* tmp = new HOutPutBackEndLUND;
+    backEndList.push_back(tmp);
+    enabledLUND = true;
+}
+
+
 //TODO URGENT!
 void HOutPut::enableLEPTO(bool _gfortran)
 {

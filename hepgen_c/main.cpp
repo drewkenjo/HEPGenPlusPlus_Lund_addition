@@ -158,6 +158,7 @@ int main ( int _argc, char** _argv ) {
     evCountMax = ParamManager.getNumEvents();
 
 
+    tmp->enableLundOutput();
     tmp->enableLeptoOutput ( gfortran );
 
     string outfile;

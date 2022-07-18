@@ -27,6 +27,7 @@ set(liblist
     hdvcsgen.cpp
     houtput.cpp
     houtputbackend.cpp
+    houtputbackendLUND.cpp
     houtputbackendLEPTO.cpp
     hrhogen.cpp
     hpigen.cpp
