@@ -776,11 +776,14 @@ int loadIntegrationValues(double _xi)
         weightmystr << weightval;
         double weighting;
         weightmystr >> weighting;
+
         weights.push_back(weighting);
         xLow.push_back(2.*_xi*xPseudo-_xi);
         xHigh.push_back((1.-_xi)*xPseudo+_xi);
         xpseudoList.push_back(xPseudo);
     }
+
+    return 0;
 }
 
 
