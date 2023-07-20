@@ -37,7 +37,7 @@ cd HEPGen++
 mkdir build 
 mkdir install 
 cd build 
-cmake ../ -DCMAKE_INSTALL_PREFIX=../install -DCMAKE_BUILD_TYPE=Release
+cmake ../ -DCMAKE_INSTALL_PREFIX=../install -DCMAKE_BUILD_TYPE=Release -DCMAKE_CXX_STANDARD=17
 make && make install
 
 
